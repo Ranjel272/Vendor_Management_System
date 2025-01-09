@@ -8,7 +8,7 @@ import LoginPage from "./components/LoginPage";
 import Dashboard from "./components/Dashboard"; // Import the Dashboard component
 
 function App() {
-  //const [data, setData] = useState(null);
+  const [data, setData] = useState(null);  // Uncomment this line to define setData
 
   // Fetching data from the server on component mount
   useEffect(() => {
