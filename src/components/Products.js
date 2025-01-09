@@ -50,9 +50,9 @@ const Products = () => {
     setProducts((prevState) => ({
       ...prevState,
       [category]: updatedCategory,
-    }));*/
+    }));
   };
-
+*/
   const countTotalProducts = () => {
     return Object.values(products).reduce((acc, category) => acc + category.length, 0);
   };
