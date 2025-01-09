@@ -8,7 +8,7 @@
     "react-dom": "^18.0.0",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.1.1",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^5.0.1",
     "source-map": "^0.6.1",
     "strip-ansi": "^6.0.1",
     "tr46": "^1.0.1",
@@ -16,16 +16,15 @@
     "webidl-conversions": "^4.0.2",
     "whatwg-url": "^7.1.0"
   },
- "scripts": {
-    "develop": "concurrently \"react-scripts start\" \" nodemon ./src/services/server.js\"",
-    "start": "concurrently \"react-scripts start\" \" node ./src/services/server.js\"",
-    "build": "CI=false react-scripts build",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "seeds": "node ./src/services/seeds/index.js"
+    "eject": "react-scripts eject"
   },
-
-
+  "engines": {
+    "node": "20.x"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
