@@ -8,13 +8,13 @@ import LoginPage from "./components/LoginPage";
 import Dashboard from "./components/Dashboard"; // Import the Dashboard component
 
 function App() {
-  const [data, setData] = useState(null);  // Uncomment this line to define setData
+  const [data, setData] = useState(null);  // Define the state for 'data'
 
   // Fetching data from the server on component mount
   useEffect(() => {
     fetch("http://localhost:5000/api/data")
       .then((response) => response.json())
-      .then((data) => setData(data))
+      .then((data) => setData(data))  // Using setData to update the state
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
