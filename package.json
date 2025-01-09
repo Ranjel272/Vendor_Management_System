@@ -16,12 +16,16 @@
     "webidl-conversions": "^4.0.2",
     "whatwg-url": "^7.1.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+ "scripts": {
+    "develop": "concurrently \"react-scripts start\" \" nodemon ./src/services/server.js\"",
+    "start": "concurrently \"react-scripts start\" \" node ./src/services/server.js\"",
+    "build": "CI=false react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "seeds": "node ./src/services/seeds/index.js"
   },
+
+
   "eslintConfig": {
     "extends": [
       "react-app",
