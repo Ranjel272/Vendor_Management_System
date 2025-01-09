@@ -45,12 +45,12 @@ const Products = () => {
     }));
   };
 
-  const deleteProduct = (category, index) => {
+  /*const deleteProduct = (category, index) => {
     const updatedCategory = products[category].filter((_, i) => i !== index);
     setProducts((prevState) => ({
       ...prevState,
       [category]: updatedCategory,
-    }));
+    }));*/
   };
 
   const countTotalProducts = () => {
