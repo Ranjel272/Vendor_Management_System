@@ -11,7 +11,7 @@ function LandingPage() {
   return (
     <div
       style={{
-        backgroundImage: "url('/BG.png')", // Path relative to the 'public' folder
+//backgroundImage: "url('/BG.png')", // Path relative to the 'public' folder
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
